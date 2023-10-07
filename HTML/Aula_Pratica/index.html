@@ -10,9 +10,19 @@
 
     <body>
         <header>
+            <div>
+                <style>
+                    y {font-family: 'Arial', sans-serif;}
+                    span {font-family: serif;}
+                    red {color: red;}
+                    purple {color: purple;}
+                    blue {color: blue;}
+                    green {color: green;}
+                </style>
+            </div>
             <div> <!--Caixinha sem significado (Só para dar espaço mesmo)-->
-                <p><strong>Ially Silva</strong></p>
-                <small>Último login em 07/10/2023 às 10:54</small>
+                <p><h2><strong><y><green>Ially Silva</green></y></strong></h2></p>
+                <small><y>Último login em 07/10/2023 às 10:54</y></small>
             </div>
             <nav>
                 <ul> <!--Lista não ordenada-->
@@ -136,7 +146,8 @@
                         <label for="email"><b>Email:</b></label>
                         <input type="text" id="email" name="email" value="Digite seu email"><br>
                         <label for="mensagem"><b>Mensagem:</b></label>
-                        <input type="text" id="mensagem" name="mensagem">
+                        <textarea class="msg" cols="25" rows="2"></textarea><br><br>
+                        <input class="btn_submit" type="submit" value="Enviar"><br>
                 </p>
                 </form>
 
