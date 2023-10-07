@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" id="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <title>Loja Virtual da Samy</title>
+    </head>
+
+
+    <body>
+        <header>
+            <div> <!--Caixinha sem significado (Só para dar espaço mesmo)-->
+                <p><strong>Ially Silva</strong></p>
+                <small>Último login em 07/10/2023 às 10:54</small>
+            </div>
+            <nav>
+                <ul> <!--Lista não ordenada-->
+                    <li>
+                        <a href="#">
+                            Início
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#clientes">
+                            Nossos clientes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pedidos">
+                            Pedidos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#fale_conosco">
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+        <main> <!--Onde criamos todas as nossas sections, envolvemos no main para ficar mais organizado/encapsulado-->
+            <section>
+                <h1>Nova Coleção</h1>
+                <h3>Ganhe 10% off na primeira compra</h3>
+                <ol>
+                    <li>
+                        <figure> <!--Traz mais semântica para o código, para mostar que lá dentro tem imagens-->
+                            <img src="./img/1.jpg" alt="Mulher negra sorridente com roupa laranja"/>
+                            <figcaption> Teste de legenda </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure> <!--Traz mais semântica para o código, para mostar que lá dentro tem imagens-->
+                            <img src="./img/2.jpg" alt="Mulher negra sorridente com roupa branca"/>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure> <!--Traz mais semântica para o código, para mostar que lá dentro tem imagens-->
+                            <img src="./img/3.jpg" alt="Mulher negra de cabelos longos e crespos sentada no chão com roupa lanraja com dourado"/>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure> <!--Traz mais semântica para o código, para mostar que lá dentro tem imagens-->
+                            <img src="./img/4.jpg" alt="Mulher negra de cabelos longos e crespos com vestido longo colorido e de mangas compridas"/>
+                        </figure>
+                    </li>
+                </ol>
+            </section>
+            <a href="https://www.cea.com.br" target="_blank">Clique aqui para conferir</a> <!--Quando usamos uma target blank, ao clicarmos no link ele vai abrir uma nova aba do navegador.-->
+            <section id="clientes"> <!--Esse id é o que chamamos lá em cima #clientes-->
+                <h3>
+                    Nossos clientes
+                </h3>
+                <article> <!--Para organizar-->
+                    <h4>Maria Pereira</h4>
+                    <h5><i>Avaliado em: 05/10/2023</i></h5>
+                    <p>
+                        Amei o vestido, vestiu bem!<br/>
+                        Entrega rápida.
+                    </p>
+                </article>
+                <article> <!--Para organizar-->
+                    <h4>Isabela Meyce</h4>
+                    <h5><i>Avaliado em: 03/10/2023</i></h5>
+                    <p>
+                        Minha filha amou a pantufa!<br/>
+                        Produto de qualidade.
+                    </p>
+                </article>
+            </section>
+            <section id="pedidos">
+                <table border="1">
+                    <thead> <!--Colunas da tabela-->
+                        <tr>
+                            <th><strong>ID</strong></th>
+                            <th><strong>Produto</strong></th>
+                            <th><strong>Quantidade</strong></th>
+                            <th><strong>Valor (R$)</strong></th>
+                            <th><strong>Data da Compra</strong></th>
+                        </tr>
+                    </thead>
+
+                    <tbody> <!--Linhas da tabela-->
+                        <tr>
+                            <th>1</th>
+                            <th>Cropped bege</th>
+                            <th>1</th>
+                            <th>29,90</th>
+                            <th>07/10/2023</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Calça Pantalona</th>
+                            <th>1</th>
+                            <th>79,90</th>
+                            <th>07/10/2023</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Tênis Adidas Tam 38</th>
+                            <th>1</th>
+                            <th>209,90</th>
+                            <th>07/10/2023</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="fale_conosco">
+                <form>
+                    <p>
+                        <label for="nome"><b>Nome:</b></label>
+                        <input type="text" id="nome" name="nome" value="Digite o seu nome"><br>
+                        <label for="email"><b>Email:</b></label>
+                        <input type="text" id="email" name="email" value="Digite seu email"><br>
+                        <label for="mensagem"><b>Mensagem:</b></label>
+                        <input type="text" id="mensagem" name="mensagem">
+                </p>
+                </form>
+
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                &COPY; Copyright | 2023 | Todos os direitos reservados
+            </p>
+        </footer>
+    </body>
+</html>

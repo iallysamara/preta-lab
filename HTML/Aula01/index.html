@@ -6,16 +6,61 @@
         <meta charset="utf-8">
             <!-- Adicione o ícone da aba do navegador -->
         <link rel="icon" href="C:\Users\ially\OneDrive\Imagens\IMG_20230906_201328.jpg" type="image/jpg">
+        <link rel="stylesheet" href="C:\Users\ially\OneDrive\Imagens\IMG_20230906_201328.jpg">
 
         <meta name="description" content="Música"> <!--Faz um rankeamento para facilitar aparecer na hora das buscas no Google-->
     </head>
 
-    <body>
-        <h1>SUM 41</h1>
-        <h2>Still Waiting</h2>
-        <h3>Álbum: Does This Look Infected?</h3>
-        <h4>Ano: 2002</h4> <br/> <!--Esse <br/> quebra linha, vem de break-->
+    <body> <!--Tudo que o usuário consegue ver fica dentro do body-->
+        <header> <!--Cabeçalho do site - a parte superior-->
+            <button type="button">
+                <i class="fa-solid fa-heart" style="color: #df1189;"></i>
+                Clique aqui
+            </button>
+            <nav> 
+                <!--Torna um link clicável, tem que usar o https://-->
+                <a href="https://open.spotify.com/intl-pt/track/0jqK7sGTLsHPkQrrcrGuKD?si=57233099b9d24ad8"> Spotify </a>
+                <a href="https://pt.wikipedia.org/wiki/Sum_41" >Sobre a SUM 41 </a>
+            </nav>
+        </header>
+
+        <section> <!--Cada parte da página é separada por sessão-->
+        <br/>  <h1>INFORMAÇÕES DA MÚSICA</h1> <br/>
+        </section>
+
+        <ul> <!--Lista desordenada-->
+            <li><h3>Artista: SUM 41</h3></li>
+            <li><h3>Still Waiting</h3></li>
+            <li><h3>Álbum: Does This Look Infected?</h3></li>
+            <li><h3>Ano: 2002</h3></li> <br/> <!--Esse <br/> quebra linha, vem de break-->
+        </ul>
+
+        <img src="C:\Users\ially\OneDrive\Imagens\sum41.jpeg" alt="Foto da banda Sum 41"/> <!--src = search alt = --> 
+
+        <br/><br/>
+        <table border="1">
+            <thead> <!--Cabeça da tabela-->
+                <tr>
+                    <th> Código </th> <!--Cria uma coluna-->
+                    <th> Banda </th>
+                </tr>
+            </thead>
+            <tbody> <!--Corpo da tabela-->
+                <tr>
+                    <td> 01 </td> <!--Linha da tabela-->
+                    <td> Sum41 </td>
+                </tr>
+                <tr>
+                    <td> 02 </td>
+                    <td> Falling Reverse </td>
+                </tr>
+            </tbody>
+        </table>
         
+        <section> <!--Cada parte da página é separada por sessão-->
+            <br/>  <h2>Still Waiting</h2> <br/>
+        </section>
+
         <p><b>So am I still waiting <br/>
 
             For this world to stop <small>hating?</small> <br/>
@@ -133,8 +178,28 @@
             Can't find a good reason <br/>
             
             For this world to believe </p> <!--Parágrafo-->
+
+        <br/><p><b><h2>O que achou de Still Waiting?</h2></b></p>
+
+        <form>
+            <input type="radio" id="html" name="opiniao" value="HTML">
+            <label for="html">Ruim</label><br>
+            <input type="radio" id="css" name="opiniao" value="CSS">
+            <label for="css">Boa</label><br>
+            <input type="radio" id="javascript" name="opiniao" value="JavaScript">
+            <label for="javascript">Ótima</label>
+        </form>
         
     </body>
+
+    <br/><br/><footer> <!--Rodapé-->
+        <nav>
+        <ul>
+            <li>Sobre</li> 
+            <li>Direitos</li>
+        </ul>
+        </nav>
+    </footer>
 
 
 </html>
