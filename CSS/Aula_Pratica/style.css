@@ -1,0 +1,35 @@
+*{ /*Reset da página*/
+    margin-left : 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif; /*Qualque*/
+}
+
+.cabecalho{/*Referência da classe cabecalho lá no header, poderíamos passar o header direto também*/
+
+    background-color: #7C71FF;
+    display: flex; /*O lex envolve toda a classe como contêiner*/
+    align-items: center;
+    justify-content: space-between; /*Dar espaço entre os itens*/
+    height: 100px; /*Altura fixa*/
+}
+
+li{
+    display: inline-block; /*Deixa um ao lado do outro, só o inline não permite mexer no tamanho*/
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 50px; /*Arredonda as bordas*/
+    margin-right: 20px;
+}
+a{
+    text-decoration: None; /*Nenhum link vai recerber decoração*/
+
+}
+
+.info-usuario{
+    color: #FFFFFF;
+    margin-left: 30px;
+}
+
+.nome{
+    text-transform: uppercase; /*Toda fonte em UPPER*/
+}
