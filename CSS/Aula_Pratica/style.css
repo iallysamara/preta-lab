@@ -16,11 +16,33 @@
 
 .cabecalho li{
     display: inline-block; /*Deixa um ao lado do outro, só o inline não permite mexer no tamanho*/
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.links{
     background-color: #FFFFFF;
     padding: 10px;
     border-radius: 50px; /*Arredonda as bordas*/
-    margin-right: 20px;
 }
+
+.inicio{
+    background: #200065;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    align-items: flex-start;
+    border-radius: 50px;
+    
+    color: #D9D9D9;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
 a{
     text-decoration: None; /*Nenhum link vai recerber decoração*/
 }
@@ -38,7 +60,6 @@ a{
     padding-top: 30px; /*Espaço para cima entre as sessões*/
     padding-bottom: 30px;
     background: #D7E2FF;
-    text-align: center;
     height: 400px;
     flex-shrink: 0;
     display: block;
@@ -67,6 +88,7 @@ a{
 
 .imagens li{
     display: inline-block; /*As imagens ficaram lado a lado*/
+    justify-content:space-around;
     margin-right: 70px; /*Distância entra as imagens*/
     margin-left: 55px; 
     margin-right: 55px;
@@ -76,9 +98,8 @@ a{
 .clientes{
     padding-top: 30px;
     background: #AEBFEB;
-    text-align: center;
     height: 400px;
-
+    text-align: center;
 }
 
 .clientes h3{
@@ -90,12 +111,20 @@ a{
     line-height: normal;
 }
 
+.container-clientes{
+    display: flex; /* Use display: flex; para os elementos ficarem lado a lado */
+    justify-content: center; /* Centraliza horizontalmente os elementos */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    padding-top: 10px;
+}
+
 .clientes article{
     background: #D4E0FF;
     display: inline-block; /*Os feedbacks ficaram lado a lado*/
     width: 260px;
     height: 260px;
     margin-left: 50px; /*Espaço entre os cometários*/
+    
 }
 
 .clientes article > p{
@@ -153,28 +182,45 @@ a{
 .fale_conosco{
     padding-top: 30px;
     background: #AEBFEB; 
-    width: 1440px;
-    height: 685px;
-    flex-shrink: 0;  
+    height: 587px;
+    text-align: center;
+  
 }
 
 .fale_conosco h2{
+    color: #200065;
     text-align: center;
+    font-family: Abril Fatface;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .fale_conosco label{
     margin-left: 100px;
     padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
 }
 
+
 .btn_submit{
-    display: flex;
+    display: inline-block;
     width: 270px;
     padding: 10px 15px;
     border-radius: 10px;
     border: 1px solid #313131;
     background: #313131;
     margin: 0 auto; /*Para centralizar o botão*/
+    /*Configuração do texto*/
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 127.273% */
 }
 
 .input{
@@ -183,7 +229,8 @@ a{
     border-radius: 10px;
     border: 1px solid #AAAAAD;
     background: #FFF;
-    margin-left: 100px;
+    margin-left: 25px;
+    margin-bottom: 30px;
 }
 
 .msg{
@@ -192,5 +239,22 @@ a{
     border-radius: 10px;
     border: 1px solid #AAAAAD;
     background: #FFF;
-    margin-left: 100px;
+    margin-left: 25px;
+}
+
+.footer{
+    height: 100px;
+    flex-shrink: 0;
+    background: #3F3F3F;
+    display:flex;
+    align-items: center;
+}
+
+.footer p{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }

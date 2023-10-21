@@ -4,7 +4,7 @@
         <title>Loja Virtual da Samy</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" id="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
@@ -19,25 +19,26 @@
                 <p><h2><strong class="nome">Ially Silva</strong></h2></p>
                 <small>Último login em 21/10/2023 às 14:25</small>
             </div>
-            <nav id="meu-id" class="">
+            <nav id="meu-id" >
                 <ul> <!--Lista não ordenada-->
                     <li>
-                        <a href="#">
-                            Início
-                        </a>
+                        <div class="inicio">
+                            <i class="fa-solid fa-house" style="color: #f1f2ed; padding-right: 10px;"></i> <!--Vai dar o espaço entre o ícone e o texto-->
+                            <a href="#" >Início</a>
+                        </div>
                     </li>
                     <li>
-                        <a href="#clientes">
+                        <a href="#clientes" class="links">
                             Nossos clientes
                         </a>
                     </li>
                     <li>
-                        <a href="#pedidos">
+                        <a href="#pedidos" class="links">
                             Pedidos
                         </a>
                     </li>
                     <li>
-                        <a href="#fale_conosco">
+                        <a href="#fale_conosco" class="links">
                             Fale conosco
                         </a>
                     </li>
@@ -78,36 +79,38 @@
                 <h3>
                     Nossos clientes
                 </h3>
-                <article> <!--Para organizar-->
-                    <div>
-                        <h4>Maria Pereira</h4>
-                        <h5><i>Avaliado em: 05/10/2023</i></h5>
-                        <p>
-                            Amei o vestido, vestiu bem!<br/>
-                            Entrega rápida.
-                        </p>
-                    </div>
-                </article>
-                <article> <!--Para organizar-->
-                    <div>
-                        <h4>Isabela Meyce</h4>
-                        <h5><i>Avaliado em: 03/10/2023</i></h5>
-                        <p>
-                            Minha filha amou a pantufa!<br/>
-                            Produto de qualidade.
-                        </p>
-                    </div>
-                </article>
-                <article> <!--Para organizar-->
-                    <div>
-                        <h4>Denis Vasques</h4>
-                        <h5><i>Avaliado em: 21/10/2023</i></h5>
-                        <p>
-                            Minha primeira compra on-line no site estou tri satisfeito!<br/>
-                            Produto de qualidade, entrega rápida e site bem intuitivo.
-                        </p>
-                    </div>
-                </article>
+                <div class="container-clientes">
+                    <article> <!--Para organizar-->
+                        <div>
+                            <h4>Maria Pereira</h4>
+                            <h5><i>Avaliado em: 05/10/2023</i></h5>
+                            <p>
+                                Amei o vestido, vestiu bem!<br/>
+                                Entrega rápida.
+                            </p>
+                        </div>
+                    </article>
+                    <article> <!--Para organizar-->
+                        <div>
+                            <h4>Isabela Meyce</h4>
+                            <h5><i>Avaliado em: 03/10/2023</i></h5>
+                            <p>
+                                Minha filha amou a pantufa!<br/>
+                                Produto de qualidade.
+                            </p>
+                        </div>
+                    </article>
+                    <article> <!--Para organizar-->
+                        <div>
+                            <h4>Denis Vasques</h4>
+                            <h5><i>Avaliado em: 21/10/2023</i></h5>
+                            <p>
+                                Minha primeira compra on-line no site estou tri satisfeito!<br/>
+                                Produto de qualidade, entrega rápida e site bem intuitivo.
+                            </p>
+                        </div>
+                    </article>
+                </div>
             </section>
             <section id="pedidos" class="pedidos">
                 <h3>Meus pedidos</h3>
@@ -164,7 +167,7 @@
             </section>
         </main>
 
-        <footer>
+        <footer class="footer">
             <p>
                 &COPY; Copyright | 2023 | Todos os direitos reservados
             </p>
