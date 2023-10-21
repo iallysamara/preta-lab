@@ -17,7 +17,7 @@
         <header class="cabecalho">
             <div class="info-usuario"> <!--Caixinha sem significado (Só para dar espaço mesmo)-->
                 <p><h2><strong class="nome">Ially Silva</strong></h2></p>
-                <small>Último login em 14/10/2023 às 10:10</small>
+                <small>Último login em 21/10/2023 às 14:25</small>
             </div>
             <nav id="meu-id" class="">
                 <ul> <!--Lista não ordenada-->
@@ -46,14 +46,14 @@
 
         </header>
         <main> <!--Onde criamos todas as nossas sections, envolvemos no main para ficar mais organizado/encapsulado-->
-            <section>
-                <h1>Nova Coleção</h1>
-                <h3>Ganhe 10% off na primeira compra</h3>
+            <section class="imagens">
+                <h1>Nova Coleção Verão 2024</h1>
+                <h3>Ganhe <b>10%</b> off na primeira compra</h3>
                 <ol>
                     <li>
                         <figure> <!--Traz mais semântica para o código, para mostar que lá dentro tem imagens-->
                             <img src="./img/1.jpg" alt="Mulher negra sorridente com roupa laranja"/>
-                            <figcaption> Teste de legenda </figcaption>
+                            <!-- <figcaption> Teste de legenda </figcaption> -->
                         </figure>
                     </li>
                     <li>
@@ -72,41 +72,55 @@
                         </figure>
                     </li>
                 </ol>
+                <a href="https://www.cea.com.br" target="_blank">Clique aqui para conferir</a> <!--Quando usamos uma target blank, ao clicarmos no link ele vai abrir uma nova aba do navegador.-->
             </section>
-            <a href="https://www.cea.com.br" target="_blank">Clique aqui para conferir</a> <!--Quando usamos uma target blank, ao clicarmos no link ele vai abrir uma nova aba do navegador.-->
-            <section id="clientes"> <!--Esse id é o que chamamos lá em cima #clientes-->
+            <section id="clientes" class="clientes"> <!--Esse id é o que chamamos lá em cima #clientes-->
                 <h3>
                     Nossos clientes
                 </h3>
                 <article> <!--Para organizar-->
-                    <h4>Maria Pereira</h4>
-                    <h5><i>Avaliado em: 05/10/2023</i></h5>
-                    <p>
-                        Amei o vestido, vestiu bem!<br/>
-                        Entrega rápida.
-                    </p>
+                    <div>
+                        <h4>Maria Pereira</h4>
+                        <h5><i>Avaliado em: 05/10/2023</i></h5>
+                        <p>
+                            Amei o vestido, vestiu bem!<br/>
+                            Entrega rápida.
+                        </p>
+                    </div>
                 </article>
                 <article> <!--Para organizar-->
-                    <h4>Isabela Meyce</h4>
-                    <h5><i>Avaliado em: 03/10/2023</i></h5>
-                    <p>
-                        Minha filha amou a pantufa!<br/>
-                        Produto de qualidade.
-                    </p>
+                    <div>
+                        <h4>Isabela Meyce</h4>
+                        <h5><i>Avaliado em: 03/10/2023</i></h5>
+                        <p>
+                            Minha filha amou a pantufa!<br/>
+                            Produto de qualidade.
+                        </p>
+                    </div>
+                </article>
+                <article> <!--Para organizar-->
+                    <div>
+                        <h4>Denis Vasques</h4>
+                        <h5><i>Avaliado em: 21/10/2023</i></h5>
+                        <p>
+                            Minha primeira compra on-line no site estou tri satisfeito!<br/>
+                            Produto de qualidade, entrega rápida e site bem intuitivo.
+                        </p>
+                    </div>
                 </article>
             </section>
-            <section id="pedidos">
-                <table border="1">
+            <section id="pedidos" class="pedidos">
+                <h3>Meus pedidos</h3>
+                <table border="2">
                     <thead> <!--Colunas da tabela-->
                         <tr>
-                            <th><strong>ID</strong></th>
-                            <th><strong>Produto</strong></th>
-                            <th><strong>Quantidade</strong></th>
-                            <th><strong>Valor (R$)</strong></th>
-                            <th><strong>Data da Compra</strong></th>
+                            <th>ID</th>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Valor (R$)</th>
+                            <th>Data da Compra</th>
                         </tr>
                     </thead>
-
                     <tbody> <!--Linhas da tabela-->
                         <tr>
                             <th>1</th>
@@ -133,14 +147,15 @@
                 </table>
             </section>
 
-            <section id="fale_conosco">
+            <section id="fale_conosco" class="fale_conosco">
+                <h2>Fale conosco</h2>
                 <form>
                     <p>
-                        <label for="nome"><b>Nome:</b></label>
-                        <input type="text" id="nome" name="nome" value="Digite o seu nome"><br>
-                        <label for="email"><b>Email:</b></label>
-                        <input type="text" id="email" name="email" value="Digite seu email"><br>
-                        <label for="mensagem"><b>Mensagem:</b></label>
+                        <label for="nome"><b>Nome:</b></label><br>
+                        <input type="text" id="nome" class="input" name="nome" value="Digite o seu nome"><br>
+                        <label for="email"><b>Email:</b></label><br>
+                        <input type="text" id="email" class="input" name="email" value="Digite seu email"><br>
+                        <label for="mensagem"><b>Mensagem:</b></label><br>
                         <textarea class="msg" cols="25" rows="2"></textarea><br><br>
                         <input class="btn_submit" type="submit" value="Enviar"><br>
                 </p>

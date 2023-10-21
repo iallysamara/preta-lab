@@ -1,7 +1,8 @@
 *{ /*Reset da página*/
     margin-left : 0;
     padding: 0;
-    font-family: 'Inter', sans-serif; /*Qualque*/
+    margin-top: 0mm; /*Retira a margem entre as sessões*/
+    font-family: 'Inter', sans-serif; /*Qualquer*/
 }
 
 .cabecalho{/*Referência da classe cabecalho lá no header, poderíamos passar o header direto também*/
@@ -13,7 +14,7 @@
     height: 100px; /*Altura fixa*/
 }
 
-li{
+.cabecalho li{
     display: inline-block; /*Deixa um ao lado do outro, só o inline não permite mexer no tamanho*/
     background-color: #FFFFFF;
     padding: 10px;
@@ -22,7 +23,6 @@ li{
 }
 a{
     text-decoration: None; /*Nenhum link vai recerber decoração*/
-
 }
 
 .info-usuario{
@@ -32,4 +32,165 @@ a{
 
 .nome{
     text-transform: uppercase; /*Toda fonte em UPPER*/
+}
+
+.imagens{
+    padding-top: 30px; /*Espaço para cima entre as sessões*/
+    padding-bottom: 30px;
+    background: #D7E2FF;
+    text-align: center;
+    height: 400px;
+    flex-shrink: 0;
+    display: block;
+    color: #200065;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.imagens h1{
+    font-family: Abril Fatface;
+    font-size: 36px;
+}
+
+.imagens h3{
+    color: #200065;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.imagens li{
+    display: inline-block; /*As imagens ficaram lado a lado*/
+    margin-right: 70px; /*Distância entra as imagens*/
+    margin-left: 55px; 
+    margin-right: 55px;
+
+}
+
+.clientes{
+    padding-top: 30px;
+    background: #AEBFEB;
+    text-align: center;
+    height: 400px;
+
+}
+
+.clientes h3{
+    color: #200065;
+    font-family: Abril Fatface;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.clientes article{
+    background: #D4E0FF;
+    display: inline-block; /*Os feedbacks ficaram lado a lado*/
+    width: 260px;
+    height: 260px;
+    margin-left: 50px; /*Espaço entre os cometários*/
+}
+
+.clientes article > p{
+    color: #1E1E1E;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pedidos{
+    padding-top: 30px;
+    background: #D7E2FF;
+    height: 300px;
+}
+
+.pedidos h3{
+    color: #200065;
+    text-align: center;
+    font-family: Abril Fatface;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pedidos table{
+    margin:auto; /*Centraliza a tabela*/
+    border-collapse: collapse; /*Coloca bordas simples na tabela*/
+}
+
+.pedidos table > thead{
+    border: 1px solid #1E1E1E;
+    background: #7C71FF;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.pedidos table > tbody{
+    border: 1px solid #1E1E1E;
+    background: #FFF;
+}
+
+.pedidos table > tbody > tr  > th{
+    width: 230px;
+    height: 18px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.fale_conosco{
+    padding-top: 30px;
+    background: #AEBFEB; 
+    width: 1440px;
+    height: 685px;
+    flex-shrink: 0;  
+}
+
+.fale_conosco h2{
+    text-align: center;
+}
+
+.fale_conosco label{
+    margin-left: 100px;
+    padding-top: 10px;
+}
+
+.btn_submit{
+    display: flex;
+    width: 270px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #313131;
+    background: #313131;
+    margin: 0 auto; /*Para centralizar o botão*/
+}
+
+.input{
+    width: 1141px;
+    padding: 10px 15px; /*Padroniza o tamanho da caixa do input*/
+    border-radius: 10px;
+    border: 1px solid #AAAAAD;
+    background: #FFF;
+    margin-left: 100px;
+}
+
+.msg{
+    width: 1141px;
+    padding: 30px 15px; /*Padroniza o tamanho da caixa do input*/
+    border-radius: 10px;
+    border: 1px solid #AAAAAD;
+    background: #FFF;
+    margin-left: 100px;
 }
