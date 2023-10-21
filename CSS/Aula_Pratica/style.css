@@ -89,9 +89,9 @@ a{
 .imagens li{
     display: inline-block; /*As imagens ficaram lado a lado*/
     justify-content:space-around;
-    margin-right: 70px; /*Distância entra as imagens*/
-    margin-left: 55px; 
-    margin-right: 55px;
+    margin-right: 10px; /*Distância entra as imagens*/
+    margin-left: 10px; 
+    margin-right: 10px;
 
 }
 
